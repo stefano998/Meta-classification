@@ -1,0 +1,30 @@
+Software: Octave
+
+Instructions:
+
+- At first, copy to this folder the following files from the folder "Exs_CriticalValues_Ev_Test_Sets":
+All files regarding Ev matrix and critical values
+
+Run the numbered files in the ascending order
+Files with the same number can run simultaneously
+The unnumbered files do not need to be started by the user (they are triggered by the numbered files automatically)
+
+Description of the main Octave codes:
+
+01.save_outs_positions.m: simulate and save the matrix with the position of the outliers for each scenario simulated
+02.v_L1.m: compute the residuals vector for each scenario simulated (MinL1).
+02.v_LInf.m: compute the residuals vector for each scenario simulated (MinLInf).
+03.w_IDS.m: compute the critical value for outlier identification (IDS).
+03.w_L1.m: compute the critical value for outlier identification (MinL1).
+03.w_LInf.m: compute the critical value for outlier identification (MinLInf).
+03.w_SLRTMO.m: compute the critical value for outlier identification (SLRTMO).
+04.MinL1.m: compute the accuracy in outlier identification (MinL1).
+04.MinLInf.m: compute the accuracy in outlier identification (MinLInf).
+04.IDS.m: compute the accuracy in outlier identification (IDS).
+04.SLRTMO.m: compute the accuracy in outlier identification (SLRTMO).
+acc_score.m: function to compute accuracy in outlier identification.
+functionIDS: function to identify outliers (IDS)
+functionSLRTMO: function to identify outliers (SLRTMO)
+get_network.m: function that returns all information needed about each geodetic network analyzed
+gera_smc.m: generates Monte Carlo simulations (with outliers)
+gera_smc_0outdif.m: generates Monte Carlo simulations (without outliers)
